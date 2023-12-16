@@ -1,0 +1,64 @@
+.Profile{
+    font-family: "Pretendard"
+}
+.horizon{
+    display: flex;
+    padding: 20px;
+}
+.vertical{
+    display: table-cell;
+    vertical-align: middle;
+}
+.profilename{
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+.buttonRight{
+    position: relative;
+    left: 650px;
+    top: 135px;
+}
+.filterlist{
+    background-color: #e2f0e4;
+    border-radius: 10px;
+    display: flex;
+    height: 30px;
+    vertical-align: middle;
+    padding: 5px;
+}
+.filterlist2{
+    display: flex;
+    height: 20px;
+    vertical-align: middle;
+    padding: 5px;
+}
+.front{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+.rear{
+    padding-left: 200px;
+    width: 750px;
+    justify-content: space-between;
+    display: flex;
+}
+.button1{
+    border-style: solid;
+    border-radius: 10px;
+}
+.border{
+    border: 10pt;
+    border-radius: 5px;
+    border-color: black;
+}
+.input{
+    width: 450px;
+}
+.modalrealtime{
+    display: flex;
+    background-color: #74B37A;
+    border-radius: 10px;
+    justify-content: space-between;
+}

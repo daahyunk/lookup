@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dark-mode {
+  background-color: #2C2D33;
+  color: #ffffff; /* 가독성을 위한 텍스트 색상 변경 */
+}
+/* Dark Mode Icon Styles */
+.dark-mode-icon {
+  position: absolute;
+  top: 40px;
+  right: 280px;
+  cursor: pointer;
+  z-index: 999; /* 아이콘이 다른 요소 위에 올라가도록 설정 */
+}
+.dark-mode .card {
+  background-color: #2C2D33; /* 다크모드에서의 카드 배경색 */
+  color: #ffffff;
+}
+footer {
+  background-color: white;
+  color: darkgray;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+
+.dark-mode footer {
+  background-color: #2C2D33;
+  color: darkgray;
+}

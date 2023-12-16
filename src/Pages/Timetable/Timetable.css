@@ -1,0 +1,107 @@
+table {
+  width: 80%;
+  margin: 0 auto; /* 가로 중앙 정렬 */
+}
+.timetable th,
+.timetable td {
+  border: 1px solid #ddd; /* 테두리 스타일 지정 */
+  padding: 8px;
+  text-align: center;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 152px; /* 간격 조절을 위한 마진 추가 */
+  margin-bottom: 10px;
+}
+.write-button {
+  background-color: rgb(110, 172, 110);
+  color: #fff;
+  padding: 4px 7px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px; 
+}
+.delete-button {
+  background-color: #ede6e5;
+  color: rgb(8, 7, 7);
+  border: none; 
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+.modal-content-custom {
+  background-color: #ffffff;
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 20px;
+  border: 5px solid #BDBDBD;
+  width: 25%; /* 원하는 크기로 조절 */
+  height: 60%;
+  position: absolute; /* 절대 위치 지정 */
+  top: 50%; /* 화면 상단에서 50% 위치 */
+  left: 50%; /* 화면 좌측에서 50% 위치 */
+  transform: translate(-50%, -50%); /* 중앙 정렬을 위한 이동 */
+  border-radius: 20px;
+}
+.modal-content-input {
+  width: 100%; /* 원하는 가로 크기로 조절 */
+  height: 40px; /* 원하는 세로 크기로 조절 */
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid #aaa8a8; /* 테두리 색상 설정 */
+  padding: 5px; /* 안쪽 여백 설정 */
+}
+.modal-content-select {
+  width: 45%; /* 원하는 가로 크기로 조절 */
+  height: 35px; /* 원하는 세로 크기로 조절 */
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid #aaa8a8; /* 테두리 색상 설정 */
+  padding: 5px; /* 안쪽 여백 설정 */
+}
+.modal-wrapper button {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 5px; /* 원하는 정도의 둥글기로 조절 */
+  background-color: rgb(110, 172, 110); /* 이 부분에 색상 코드 넣어줘 */
+  color: #fff; /* 버튼 텍스트 색상 */
+  border: none;
+  width: 30%; /* 원하는 크기로 조절 */
+  height: 35px;
+  margin-top: 20px;
+}
+.modal-title {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+/* 라이트 모드일 때의 배경색 */
+.modal-wrapper { 
+  background-color: #ffffff;
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 20px;
+  border: 5px solid #BDBDBD;
+  width: 25%; /* 원하는 크기로 조절 */
+  height: 60%;
+  position: absolute; /* 절대 위치 지정 */
+  top: 50%; /* 화면 상단에서 50% 위치 */
+  left: 50%; /* 화면 좌측에서 50% 위치 */
+  transform: translate(-50%, -50%); /* 중앙 정렬을 위한 이동 */
+  border-radius: 20px;
+}
+
+/* 다크 모드일 때의 배경색 */
+.dark-mode .modal-wrapper {
+  background-color: #2C2D33;
+  color:#fff
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}

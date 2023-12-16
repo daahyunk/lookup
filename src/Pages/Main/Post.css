@@ -1,0 +1,90 @@
+.card {
+    width: 320px; /* 카드의 고정 폭 설정 */
+    height: 150px; /* 카드의 고정 높이 설정 */
+    border: 2px solid rgb(207, 205, 205);
+    padding: 20px;
+    background-color: 'transparent';
+    border-radius: 15px;
+    background-color: #ffffff; /* 카드 기본 배경색 (라이트 모드) */
+    transition: background-color 0.3s ease; /* 배경색 전환 효과 */
+
+  } 
+  .bold-text {
+    font-weight: bold; 
+    font-size: 22px; 
+  }
+  
+  .post {
+    position: relative;
+    display: flex;
+    padding-top: 35px;
+    justify-content: center; /* 가로 중앙 정렬을 위해 추가 */
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #74B37A; /* 슬라이더 버튼 색상을 초록색으로 변경합니다. */
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .swiper-button-prev {
+    left: -100px;
+  }
+  
+  .swiper-button-next {
+    right: -100px;
+  }
+  .category {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 13px;
+    text-align: left;
+  }
+  .category-text {
+    background-color: rgb(193, 192, 192); /* 배경색 설정 (예: 주황색) */
+    padding: 5px; /* 텍스트 주변에 여백 설정 */
+    border-radius: 10px;
+  }
+  .best-text {
+    /* 구분 텍스트 스타일 설정 */
+    background-color: rgb(110, 172, 110); /* 배경색 설정 (예: 주황색) */
+    padding: 5px; /* 텍스트 주변에 여백 설정 */
+    border-radius: 10px;
+  }
+  .bookmark-icon {
+    position: absolute;
+    top: 18px; /* 원하는 상단 여백 조절 */
+    right: 18px; /* 원하는 오른쪽 여백 조절 */
+    font-size: 24px; /* 원하는 아이콘 크기 조절 */
+  }
+  .title {
+    text-align: left;
+    margin: 25px 0;
+    cursor: pointer;
+    font-size: 16px; /* 원하는 글꼴 크기 */
+    color: #333; /* 원하는 글꼴 색상 */
+    font-weight:normal; /* 글꼴 두껍게 */
+  }
+  .dark-mode .title {
+    /* 다크 모드일 때 적용될 색상 */
+    color: white;
+  }
+  .dark-mode .card {
+    border-color: white;
+  }
+  .icons {
+    display: flex; /* 아이콘을 가로로 배치하기 위한 설정 */
+    font-size: 33px; /* 아이콘 크기 조절 */
+  }
+  .views {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+  }
+  .swiper-slide {
+    margin-right: 20px; /* 간격 크기 조절 */
+  }

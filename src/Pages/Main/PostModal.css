@@ -1,0 +1,120 @@
+/* PostModal.css */
+
+/* 모달 전체를 화면에 띄우기 */
+.post-modal {
+  width: 50%; /* 원하는 너비로 조절 */
+  height: 90%; /* 원하는 높이로 조절 */
+  max-width: 600px; /* 최대 너비 설정 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* 모달 크기 조절 */
+    width: 30%; /* 원하는 크기로 조절 */
+    height: 75%;
+    max-width: 800px; /* 최대 너비 설정 */
+  }
+  
+  .post-category {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 13px;
+    text-align: left;
+  }
+  .post-modal-content .icons {
+    font-size: 10px; /* 원하는 아이콘 크기 설정 */
+    margin-left: 30px;
+  }
+  .post-category-text {
+    background-color: rgb(193, 192, 192); /* 배경색 설정 (예: 주황색) */
+    padding: 5px; /* 텍스트 주변에 여백 설정 */
+    border-radius: 10px;
+  }
+  /* 타이틀 크기 조절 */
+  .post-modal h5 {
+    font-size: 18px; /* 원하는 크기로 조절 */
+    margin-top: 35px;
+    margin-bottom: 10px; /* 타이틀과 내용 사이 여백 */
+    cursor: pointer;
+  }
+  .post-modal-content h6 {
+    font-size: 13px; /* 원하는 크기로 조절 */
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.8;
+    font-weight: normal;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .images img {
+    max-width: 85%;
+    max-height: 300px; /* 이미지 최대 높이 설정 */
+    margin: 10px; /* 이미지 사이 여백 설정 */
+  } 
+.post-modal-content button.apply-button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px; /* 버튼과 내용 사이 여백 */
+    background-color: rgb(110, 172, 110); /* 배경색 설정 (예: 주황색) */
+    padding-left: 10px; /* 텍스트 주변에 여백 설정 */
+    padding-right: 10px; /* 텍스트 주변에 여백 설정 */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .post-modal-content button.apply-button:hover {
+    color: black;
+    background-color: rgb(193, 192, 192);
+  }
+  .post-modal-content button.apply-button:disabled {
+    color: black;
+    background-color: rgb(193, 192, 192);
+    pointer-events: none; /* 마우스 이벤트 비활성화 */
+  }
+  
+  
+  /* 모달이 열렸을 때만 표시 */
+  .post-modal-content {
+    display: block;
+  }
+  
+  /* 모달이 닫혔을 때 숨김 */
+  .post-modal-content.hidden {
+    display: none;
+  }
+  
+  /* 배경을 어둡게 만들어 모달을 강조 */
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+  .close-button:hover {
+    color: #000;
+  }
